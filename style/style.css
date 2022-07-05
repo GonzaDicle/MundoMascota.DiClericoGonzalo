@@ -1,0 +1,884 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    color: rgba(47, 49, 53, 0.685);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+                           /*GRILLA*/
+
+nav{
+    grid-area: nav;
+}
+#seccionOfertas{
+    grid-area: ofertas;
+}
+#consejoVideo{
+    grid-area: consejosVideo;
+}
+#seccionConsejos{
+    grid: consejos;
+}
+footer{
+    grid-area: footer;
+}
+.pestanas{
+    grid-area: pestanas;
+}
+#seccionLogin{
+    grid-area: login;
+}
+#seccionContacto{
+    grid-area: contacto;
+}
+#seccionHorarios{
+    grid-area: horarios;
+}
+#nosotros{
+    grid-area: nosotros;
+}
+#nosotros1{
+    grid-area: nosotros1;
+}
+#terminos{
+    grid-area: terminos;
+}
+.copy{
+    grid-area: copy;
+}
+
+                            /*HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+    grid-area: header;
+}
+
+header a{
+    text-decoration: none;
+    font-size: 14px;
+} 
+
+.boxHeader{
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.boxCarrito{
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+    border-color: rgba(109, 133, 175, 0.658);
+    padding: 5px 20px 5px 20px;  
+    border-style: solid;
+    border-width: 2.5px;
+}
+
+.boxLogin{
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+    border-color: rgba(109, 133, 175, 0.658);
+    padding: 5px 20px 5px 20px;
+    border-style: solid;
+    border-width: 2.5px;
+    margin-top: 5px;
+}
+
+.boxCarrito a,
+.boxLogin a{
+    color: gray;
+    font-family:'Source Sans Pro', sans-serif;
+}
+
+
+#botonBuscar{
+    border-radius: 30px;
+    background-color: rgba(236, 202, 202, 0.466);
+    border: solid 1px rgba(109, 133, 175, 0.658);
+    height: 27px;
+    width: 70px;
+}
+
+#boxBuscador1{
+    border: solid 1px gray;
+    border-radius: 30px;
+    height: 23px;
+    background-color: rgba(109, 133, 175, 0.658);
+}
+                                /*NAV*/
+nav{
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li{
+    margin: 0px 100px;
+}
+
+nav a{
+    color: rgba(109, 133, 175, 0.658);
+    text-decoration: none;
+}
+
+                                    /*FOOTER*/
+footer{
+    background-color: rgba(236, 202, 202, 0.466);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+    padding-top: 50px;
+    border-radius: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+footer ul{
+    list-style: none;
+    padding: 5px 0px;
+}
+
+footer ul li{
+    padding: 2px 0px;
+}
+
+footer a{
+    text-decoration: none;
+    color: gray;
+}
+
+.copy{
+    background-color: rgba(236, 202, 202, 0.466);
+    text-align: center;
+    border-radius: 20px;
+}
+
+                                /*INDEX*/ 
+                            /*MEDIA QUERIES 360*/
+
+@media screen and (min-width: 360px){
+
+#grillaIndex{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header" "nav" "ofertas" "consejosVideo" "consejos" "footer" "copy"
+}
+
+.logoImagen,
+.boxBuscador,
+.boxHeader,
+#listaNav,
+#botonBurger{
+    display: none;
+}
+
+.menuLista a,
+.menuLista li{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 16px;
+   
+}
+
+.menuLista{
+    width: 100%;
+    height: 238%;
+    background-color: rgba(109, 133, 175, 0.658);
+    position: absolute;
+    top: 0%;
+    left: -120%;
+    transition: left 0.9s;
+}
+
+#botonBurger:checked ~ .menuLista{
+   left: 0%;
+}
+.menu{
+    position: relative;
+    transition: left 0.9s;
+    color: rgba(109, 133, 175, 0.658);
+}
+#botonBurger:checked ~ .menu{
+    left: 55%;
+}
+
+header{
+    justify-content: space-around;
+}
+
+#logoMobile{
+    text-decoration: none;
+    color: rgba(109, 133, 175, 0.658);
+}
+
+.enlacesMobile{
+    text-decoration: none;
+    color: rgba(109, 133, 175, 0.658);
+}
+
+#lupa{
+    color: rgba(109, 133, 175, 0.658);
+}
+
+#ofertas{
+    max-width: 100%;
+}
+
+#video{
+    max-width: 80%;
+}
+
+#seccionConsejos h2{
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(73, 73, 73);
+}
+
+#seccionConsejos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+    font-family:'Source Sans Pro', sans-serif;
+}
+
+#seccionConsejos article{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#consejoVideo{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(109, 133, 175, 0.658);
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+#consejoVideo h3{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.copy{
+    max-width: 100%;
+    text-align: center;
+}
+}
+                                    /*INDEX*/
+                                /*MEDIA QUERIES 1200*/
+@media screen and (min-width: 1200px){
+
+#grillaIndex{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header header" "nav nav" "ofertas ofertas" "consejosVideo consejos" "footer footer" "copy copy"
+}
+
+.logoImagen,
+.boxBuscador,
+.boxHeader,
+#listaNav,
+#seccionOfertas{
+    display: block;
+}
+
+#logoMobile,
+#menuBurger,
+#lupa,
+#carrito,
+#login,
+#botonBurger,
+.menuLista,
+.menu{
+    display: none;
+}
+
+#seccionOfertas img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#seccionConsejos h2{
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(73, 73, 73);
+}
+
+#seccionConsejos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+    font-family:'Source Sans Pro', sans-serif;
+}
+
+#seccionConsejos article{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#consejoVideo{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(109, 133, 175, 0.658);
+    border-radius: 20px;
+}
+
+#consejoVideo h3{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+}
+
+                                    /*LOGIN*/
+                                /*MEDIA QUERIES 360*/
+@media screen and (min-width: 360px){
+
+#grilla{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header" "nav" "pestanas" "login" "footer" "copy"
+}
+
+.pestanas{
+    background-color: rgba(109, 133, 175, 0.658);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#seccionLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+}
+
+
+#seccionLogin section fieldset{
+    height: 350px;
+    width: 350px;
+    padding: 20px 20px 20px 20px;
+    margin: 50px 0px;
+    
+}
+
+#seccionLogin section fieldset p{
+    text-align: center;
+}
+
+#seccionLogin section fieldset a{
+    margin-left: 20px;
+}
+
+.fieldLogin{
+    border: solid 1px gray;
+    width: 300px;
+    height: 20px;
+    margin-left: 20px;
+    border-radius: 30px;
+    background-color: rgba(109, 133, 175, 0.658);
+}
+
+.botonLogin{
+    padding: 15px 15px 15px 15px;
+    margin-top: 20px;
+    margin-left: 125px;
+    border-radius: 30px;
+    background-color: rgba(236, 202, 202, 0.466);
+    border: solid 1px gray;
+}
+
+}
+
+
+                                    /*LOGIN*/
+                                /*MEDIA QUERIES 1200*/
+@media screen and (min-width: 1200px){
+
+#grilla{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header" "nav" "pestanas" "login" "footer" "copy"
+}
+
+.logoImagen,
+.boxBuscador,
+.boxHeader,
+#listaNav,
+#seccionOfertas{
+    display: block;
+}
+
+#logoMobile,
+#menuBurger,
+#lupa,
+#carrito,
+#login,
+#botonBurger,
+.menuLista,
+.menu{
+    display: none;
+}
+
+.pestanas{
+    background-color: rgba(109, 133, 175, 0.658);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#seccionLogin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+}
+
+
+#seccionLogin section fieldset{
+    height: 350px;
+    width: 350px;
+    padding: 20px 20px 20px 20px;
+}
+
+#seccionLogin section fieldset p{
+    text-align: center;
+}
+
+#seccionLogin section fieldset a{
+    margin-left: 20px;
+}
+
+.fieldLogin{
+    border: solid 1px gray;
+    width: 300px;
+    height: 20px;
+    margin-left: 20px;
+    border-radius: 30px;
+    background-color: rgba(109, 133, 175, 0.658);
+}
+
+.botonLogin{
+    padding: 15px 15px 15px 15px;
+    margin-top: 20px;
+    margin-left: 125px;
+    border-radius: 30px;
+    background-color: rgba(236, 202, 202, 0.466);
+    border: solid 1px gray;
+}
+}
+                                    /*CONTACTO*/
+                                 /*MEDIA QUERIES 360*/
+@media screen and (min-width: 360px){
+
+ #grillaContacto{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header" "nav" "pestanas" "contacto" "horarios" "footer" "copy"
+}
+
+
+#seccionContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+}
+
+#seccionContacto fieldset{ 
+    height: 400px;
+    width: 400px;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}  
+
+#seccionContacto fieldset p{
+    text-align: center;
+}
+
+.fieldContacto{
+    width: 300px;
+    background-color: rgba(109, 133, 175, 0.658);
+    border-radius: 20px;
+    border: solid 1px gray;
+}
+
+.fieldContacto1{
+    width: 300px;
+    height: 150px;
+    background-color: rgba(109, 133, 175, 0.658);
+    border-radius: 20px;
+}
+
+.botonContacto{
+    padding: 15px 15px 15px 15px;
+    border-radius: 30px;
+    background-color: rgba(236, 202, 202, 0.466);
+    border: solid 1px gray;
+}
+
+#seccionHorarios{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+    
+}
+
+#seccionHorarios h3{
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.ubicacion{
+    margin-bottom: 50px;
+    justify-items: center;
+}
+}    
+
+                                    /*CONTACTO*/
+                                 /*MEDIA QUERIES 1200*/
+@media screen and (min-width: 1200px){
+#grillaContacto{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header header" "nav nav" "pestanas pestanas" "contacto horarios" "footer footer" "copy copy"
+}
+.logoImagen,
+.boxBuscador,
+.boxHeader,
+#listaNav,
+#seccionOfertas{
+    display: block;
+}
+
+#logoMobile,
+#menuBurger,
+#lupa,
+#carrito,
+#login,
+#botonBurger,
+.menuLista,
+.menu{
+    display: none;
+}
+#seccionContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+}
+
+#seccionContacto fieldset{ 
+    height: 400px;
+    width: 400px;
+    margin-top: 50px;
+    text-align: center;
+}  
+
+#seccionContacto fieldset p{
+    text-align: center;
+}
+
+.fieldContacto{
+    width: 300px;
+    background-color: rgba(109, 133, 175, 0.658);
+    border-radius: 20px;
+    border: solid 1px gray;
+}
+
+.fieldContacto1{
+    width: 300px;
+    height: 150px;
+    background-color: rgba(109, 133, 175, 0.658);
+    border-radius: 20px;
+}
+
+.botonContacto{
+    padding: 15px 15px 15px 15px;
+    border-radius: 30px;
+    background-color: rgba(236, 202, 202, 0.466);
+    border: solid 1px gray;
+}
+
+#seccionHorarios{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+    
+}
+
+#seccionHorarios h3{
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.ubicacion{
+    margin-bottom: 50px;
+    justify-items: center;
+}
+}
+                                    /*QUIENES*/
+                                /*MEDIA QUERIES 360*/
+@media screen and (min-width: 360px){
+#grillaQuienes{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header" "nav" "pestanas" "nosotros" "nosotros1" "footer" "copy"
+}
+
+#nosotros{
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+}
+
+#nosotros section {
+    margin: 20px 0px;
+}
+
+#nosotros h3{
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#nosotros1{
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+    flex-direction:column-reverse;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+}
+
+#nosotros1 section{
+    margin: 20px 0px;
+}
+
+#nosotros1 section h2{
+    margin-top: 20px;
+}
+}
+                                    /*NOSOTROS*/
+                                /*MEDIA QUERIES 1200*/
+
+@media screen and (min-width: 1200px){                                
+#grillaQuienes{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header header" "nav nav" "pestanas pestanas" "nosotros nosotros1" "footer footer" "copy copy"
+}
+.logoImagen,
+.boxBuscador,
+.boxHeader,
+#listaNav,
+#seccionOfertas{
+    display: block;
+}
+
+#logoMobile,
+#menuBurger,
+#lupa,
+#carrito,
+#login,
+#botonBurger,
+.menuLista,
+.menu{
+    display: none;
+}
+
+#nosotros{
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+}
+
+#nosotros section {
+    margin: 70px 0px;
+}
+
+#nosotros h3{
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#nosotros1{
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+}
+
+#nosotros1 section{
+    margin: 40px 0px;
+}
+
+#nosotros1 section h2{
+    margin-top: 100px;
+}
+}
+
+                                    /*TERMINOS*/
+                                /*MEDIA QUERIES 360*/
+@media screen and (min-width: 360px){
+
+#grillaTerminos{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header" "nav" "pestanas" "terminos" "footer" "copy"
+}
+#terminos{
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+    padding-top: 30px;
+}
+
+#terminos h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#terminos p{
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+}
+                                      /*TERMINOS*/
+                                /*MEDIA QUERIES 1200*/
+@media screen and (min-width: 1200px){
+
+#grillaTerminos{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header" "nav" "pestanas" "terminos" "footer" "copy"
+}
+
+#terminos{
+    background-color: rgba(236, 202, 202, 0.466);
+    border-radius: 20px;
+    padding-top: 30px;
+}
+
+#terminos h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#terminos p{
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+}
+    
