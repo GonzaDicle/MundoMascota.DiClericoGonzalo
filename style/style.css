@@ -369,8 +369,31 @@ header{
     margin-bottom: 20px;
     text-transform: uppercase;
 }
+                                    /*ANIMACIONES*/
+.animacionConsejos{
+    transition: all 2s;
 }
 
+.animacionConsejos:hover{
+    transform: scale(1.2);
+}
+
+.logoImagen{
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+}
                                     /*LOGIN*/
                                 /*MEDIA QUERIES 360*/
 @media screen and (min-width: 360px){
