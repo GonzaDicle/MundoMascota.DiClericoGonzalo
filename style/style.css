@@ -3,6 +3,45 @@
     padding: 0;
 }
 
+.col1{
+    display: flex;
+    justify-content: center;
+}
+
+footer a, footer ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+ul{
+    padding-left: 0%;
+}
+
+.col-md-4{
+    padding-right: 5px;
+}
+
+#formGroupExampleInputConsulta{
+    height: 200px;
+}
+
+footer{
+    background-color: rgba(178, 192, 218, 0.452);
+}
+
+.ba-light{
+    background-color: rgba(178, 192, 218, 0.452);
+}
+
+#pestana{
+    background-color: rgba(209, 178, 218, 0.452);
+}
+
+#susMascotas{
+    border: solid 2px rgba(209, 178, 218, 0.452);
+}
+
+/*
 h3{
     color: rgba(47, 49, 53, 0.685);
     font-family: 'Source Sans Pro', sans-serif;
@@ -14,7 +53,7 @@ ul{
     font-family: 'Source Sans Pro', sans-serif;
 }
                            /*GRILLA*/
-
+/*
 nav{
     grid-area: nav;
 }
@@ -56,6 +95,7 @@ footer{
 }
 
                             /*HEADER*/
+/*
 header{
     display: flex;
     justify-content: space-between;
@@ -117,7 +157,7 @@ header a{
     background-color: rgba(109, 133, 175, 0.658);
 }
                                 /*NAV*/
-nav{
+/*nav{
     background-color: rgba(236, 202, 202, 0.466);
     border-radius: 20px;
     display: flex;
@@ -142,6 +182,7 @@ nav a{
 }
 
                                     /*FOOTER*/
+                                    /*
 footer{
     background-color: rgba(236, 202, 202, 0.466);
     display: flex;
@@ -175,7 +216,7 @@ footer a{
 
                                 /*INDEX*/ 
                             /*MEDIA QUERIES 360*/
-
+/*
 @media screen and (min-width: 360px){
 
 #grillaIndex{
@@ -297,7 +338,7 @@ header{
 }
 }
                                     /*INDEX*/
-                                /*MEDIA QUERIES 1200*/
+                                /*MEDIA QUERIES 1200*//*
 @media screen and (min-width: 1200px){
 
 #grillaIndex{
@@ -369,7 +410,7 @@ header{
     margin-bottom: 20px;
     text-transform: uppercase;
 }
-                                    /*ANIMACIONES*/
+                                    /*ANIMACIONES*//*
 .animacionConsejos{
     transition: all 2s;
 }
@@ -393,9 +434,9 @@ header{
         opacity: 1;
     }
 }
-}
+}/*
                                     /*LOGIN*/
-                                /*MEDIA QUERIES 360*/
+                                /*MEDIA QUERIES 360*/ /*
 @media screen and (min-width: 360px){
 
 #grilla{
@@ -469,7 +510,7 @@ header{
 
 
                                     /*LOGIN*/
-                                /*MEDIA QUERIES 1200*/
+                                /*MEDIA QUERIES 1200*/ /*
 @media screen and (min-width: 1200px){
 
 #grilla{
@@ -557,7 +598,7 @@ header{
 }
 }
                                     /*CONTACTO*/
-                                 /*MEDIA QUERIES 360*/
+                                 /*MEDIA QUERIES 360*/ /*
 @media screen and (min-width: 360px){
 
  #grillaContacto{
@@ -632,7 +673,7 @@ header{
 }    
 
                                     /*CONTACTO*/
-                                 /*MEDIA QUERIES 1200*/
+                                 /*MEDIA QUERIES 1200*/ /*
 @media screen and (min-width: 1200px){
 #grillaContacto{
     display: grid;
@@ -720,7 +761,7 @@ header{
 }
 }
                                     /*QUIENES*/
-                                /*MEDIA QUERIES 360*/
+                                /*MEDIA QUERIES 360*/ /*
 @media screen and (min-width: 360px){
 #grillaQuienes{
     display: grid;
@@ -771,7 +812,7 @@ header{
 }
 }
                                     /*NOSOTROS*/
-                                /*MEDIA QUERIES 1200*/
+                                /*MEDIA QUERIES 1200*/ /*
 
 @media screen and (min-width: 1200px){                                
 #grillaQuienes{
@@ -842,7 +883,7 @@ header{
 }
 
                                     /*TERMINOS*/
-                                /*MEDIA QUERIES 360*/
+                                /*MEDIA QUERIES 360*/ /*
 @media screen and (min-width: 360px){
 
 #grillaTerminos{
@@ -873,7 +914,7 @@ header{
 }
 }
                                       /*TERMINOS*/
-                                /*MEDIA QUERIES 1200*/
+                                /*MEDIA QUERIES 1200*/ /*
 @media screen and (min-width: 1200px){
 
 #grillaTerminos{

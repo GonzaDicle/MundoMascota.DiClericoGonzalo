@@ -5,118 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../style/style.css">
     <script src="https://kit.fontawesome.com/3a6b59c7dc.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
 <header id="encabezado"></header>
-<div id="grilla">
-                     
-        <header>
-            <input type="checkbox" id="botonBurger">
-            <label class="menu" for="botonBurger"><i id="menuBurger" class="fa-solid fa-bars"></i></label>
-            
-            <div class="menuLista"> 
-                <ul>
-                    <li><a href="./perros.html">Perros</a></li>
-                    <li><a href="./gatos.html">Gatos</a></li>
-                    <li><a href="./aves.html">Aves</a></li>
-                    <li><a href="./peces.html">Peces</a></li>
-                    <li><a href="./promos.html">Promos</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                    <li><a href="./pages/quienes.html">Quienes somos</a></li>
-                    <li><a href="./pages/terminos.html">Terminos y condiciones</a></li>
-                    <li><a href="./pages/carrito.html">Tus compras</a></li>
+<header>
+    <nav class="navbar navbar-expand-lg ba-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../media/logo.png" alt="logo" width="150" height="150"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./login.html">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./carrito.html">Carrito</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorías</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./perros.html">Perros</a></li>
+                <li><a class="dropdown-item" href="./gatos.html">Gatos</a></li>
+                <li><a class="dropdown-item" href="./peces.html">Peces</a></li>
+                <li><a class="dropdown-item" href="./aves.html">Aves</a></li>
+                <li><a class="dropdown-item" href="./promos.html">Promos</a></li>
                 </ul>
-            </div>
-            <a id="logoMobile" href="../index.html">
-            <h1>MundoMascota</h1>
-            </a>
-            <div>
-            <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
-            
-            <a class="enlacesMobile" href="./carrito.html"><i id="carrito" class="fa-solid fa-cart-shopping"></i></a>
-            <a class="enlacesMobile" href="./login.html"><i id="login" class="fa-solid fa-user"></i></a>
-            
-            <a href="../index.html">
-            <img src="../media/logo.png" class="logoImagen" alt="Logo" width="200" height="200"/>
-            </a>
-            </div>
-            <div class="boxBuscador">
-            <form action="search.php">
-            <input type="text" id="boxBuscador1" size="70">
-            <input type="submit" value="Buscar" id="botonBuscar">
+            </li>
+            </ul>
+            <form class="d-flex mx-auto" role="search">
+            <input class="form-control me-2 col-md-8" type="search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
-            </div>
-            
-            <div class="boxHeader">
-            <div class="boxCarrito"><a href="./carrito.html">Carrito</a></div>
-            <div class="boxLogin"><a href= "./login.html">Login</a></div>
-            </div>
-        </header>   
-        <nav> 
-            <div id="listaNav">
-            <ul>
-                <li><a href="./perros.html">Perros</a></li>
-                <li><a href="./gatos.html">Gatos</a></li>
-                <li><a href="./aves.html">Aves</a></li>
-                <li><a href="./peces.html">Peces</a></li>
-                <li><a href="./promos.html">Promos</a></li>
-            </ul>
-            </div>
-        </nav>
-    
-    <div class="pestanas">
-    <h4>LOGIN</h4>
-    </div>   
-       
-    <div id="seccionLogin">
-        <section>
-        <form action="" method="GET" enctype="multipart/form-data">
-            <fieldset>
-                <legend><H3>Crear una cuenta</H3></legend>
-                <br>
-                <br>
-                <p>Escribe tu correo electrónico para crear una cuenta</p>
-                <br>
-                <br>                
-                <input type="email" class="fieldLogin">
-                <br>
-                <input type="submit" class="botonLogin" value="Crear cuenta"/>
-            </fieldset>
-        </form>
-        </section>
-        <section>
-        <form action="" method="GET" enctype="multipart/form-data">
-            <fieldset>
-                <legend><H3>¿Ya estás registrado?</H3></legend>
-                <br>
-                <br>
-                <label for="correo electronico"><p>Correo electrónico</p></label>
-                <input type="email" class="fieldLogin">
-                <br>
-                <br>
-                <label for="contrasena"><p>Contraseña</p></label>
-                <input type="password" class="fieldLogin">
-                <br>
-                <br>
-                <a href="#">¿Olvidaste tu contraseña?</a>
-                <br>
-                <br>
-                <input type="submit" class="botonLogin" value="Iniciar Sesión"/>
-            </fieldset>
-        </form>
-        </section>
-        
+        </div>
+        </div>
+    </nav>
+</header>
+<div class="container-fluid" id="pestana">
+    <div class="col text-center">
+    <h3 class="h4">LOGIN</h3>
     </div>
-        
-    <footer>
+</div>
+<div class="row my-5">
+<section class="col-md-6 text-center">
+    <form>
+        <h3 class="h3">Crer una cuenta</h3>
+        <h5 class="h5">Escribe tu correo electrónico para crear una cuenta</h5>
+        <div class="mb-3 col-md-6 mx-auto">
+          <label for="exampleInputEmail1" class="form-label"></label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn btn-primary">Crear cuenta</button>
+      </form>
+</section>
+<section class="col-md-6 text-center">
+    <form>
+        <h3 class="h3">¿Ya estás registrado?</h3>
+        <div class="mb-3 col-md-6 mx-auto">
+          <label for="exampleInputEmail1" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3 col-md-6 mx-auto">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-2"><a href="">¿Olvidaste tu contraseña?</a></div>
+        <button type="submit" class="btn btn-primary mb-2">Iniciar Sesión</button>
+      </form>
+      
+</section>
+</div>
+
+<footer>
+    <div class="container-fluid">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div class="col1">
             <a href="#encabezado">
-                <img src="../media/logo.png" alt="Logo" width="150" height="150"/>
+            <img src="../media/logo.png" alt="Logo" width="150" height="150"/>
             </a>
-            
-            <div class="boxCategorias"><h2>Categorías</h2>
+        </div>
+        <div class="col text-center"><h3 class="h3">Categorías</h3>
             <ul>
                 <li><a href="./perros.html">Perros</a></li>
                 <li><a href="./gatos.html">Gatos</a></li>
@@ -124,44 +99,35 @@
                 <li><a href="./peces.html">Peces</a></li>
                 <li><a href="./promos.html">Promos</a></li>
             </ul>
-            </div>
-            <div class="boxNosotros">
-            <h2>Nosotros</h2>
+        </div>
+        <div class="col text-center"><h3 class="h3">Nosotros</h3>
             <ul>
                 <li><a href="./contacto.html">Contacto</a></li>
                 <li><a href="./quienes.html">Quienes somos</a></li>
                 <li><a href="./terminos.html">Términos y condiciones</a></li>
             </ul>
-            </div>
-    
-            <div class="boxServicios">   
-            <h2>Servicios</h2>
+        </div>
+        <div class="col text-center"><h3 class="h3">Servicios</h3>
             <ul>
                 <li><a href="./login.html">Mi cuenta</a></li>
             </ul>
-            </div>
-    
-            <div id="redes">
-            <h3>Seguinos</h3>
-            <br>
-            <a href="http://www.facebook.com" target="_blank">
-                <img src="../media/facebook.png" alt="facebook" width="35" height="35">
-            </a>        
-            <a href="http://www.instagram.com" target="_blank">
-                <img src="../media/instagram.png" alt="instagram" width="35" height="35">
-            </a>
-            <a href="http://www.twitter.com" target="_blank">
-                <img src="../media/twitter.png" alt="twitter" width="35" height="35">
-            </a>
-            </div>
-                   
-    </footer>
-    <div class="copy">
-        Copyright 2022 MundoMascota
+        </div>
     </div>
-</div>
-
- 
-    
+    </div>
+    <div class="container-fluid">
+        <div class="col text-center">
+            <a href="http://www.facebook.com" target="_blank"><i class="bi bi-facebook fs-1"></i></a>        
+            <a href="http://www.instagram.com" target="_blank"><i class="bi bi-instagram fs-1"></i></i></a>
+            <a href="http://www.twitter.com" target="_blank"><i class="bi bi-twitter fs-1"></i></a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="col text-center">
+        <p>Copyright 2022 MundoMascota</p>
+        </div>
+    </div>
+</footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>      
 </body>
 </html>
