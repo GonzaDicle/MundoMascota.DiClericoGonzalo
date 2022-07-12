@@ -16,14 +16,14 @@
 <header>
     <nav class="navbar navbar-expand-lg ba-light">
         <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"><img src="../media/logo.png" alt="logo" width="150" height="150"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="../index.html"><img src="../media/logo.png" alt="logo" id="logo" width="150" height="150"></a>
+        <button class="navbar-toggler" id="botonMenu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./login.html">Login</a>
+                <a class="nav-link active" id="loginHeader" aria-current="page" href="./login.html">Login</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./carrito.html">Carrito</a>
@@ -41,7 +41,7 @@
             </ul>
             <form class="d-flex mx-auto" role="search">
             <input class="form-control me-2 col-md-8" type="search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
+            <button class="btn btn-outline-success" id="botonBuscar" type="submit">Buscar</button>
             </form>
         </div>
         </div>
@@ -52,7 +52,7 @@
     <h3 class="h4">TERMINOS Y CONDICIONES</h3>
     </div>
 </div>
-<section class="mx-3">
+<section class="px-3" id="fondoTerminos">
         <p>Bienvenidos a MundoMascota, la tienda para mascotas donde comprás fácil y al mejor precio.
         Éste es un servicio de MundoMascota. Por favor, leé las siguientes reglas básicas que rigen el uso de este sitio (en adelante, las “Reglas”).
         Cualquier entrega que se solicite para un destino fuera de este área queda sujeta a la disponibilidad de la empresa.
@@ -89,10 +89,10 @@
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
         <div class="col1">
             <a href="#encabezado">
-            <img src="../media/logo.png" alt="Logo" width="150" height="150"/>
+            <img src="../media/logo.png" alt="Logo" id="logo" width="150" height="150"/>
             </a>
         </div>
-        <div class="col text-center"><h3 class="h3">Categorías</h3>
+        <div class="col text-center"><h3 class="h5">Categorías</h3>
             <ul>
                 <li><a href="./perros.html">Perros</a></li>
                 <li><a href="./gatos.html">Gatos</a></li>
@@ -101,14 +101,14 @@
                 <li><a href="./promos.html">Promos</a></li>
             </ul>
         </div>
-        <div class="col text-center"><h3 class="h3">Nosotros</h3>
+        <div class="col text-center"><h3 class="h5">Nosotros</h3>
             <ul>
                 <li><a href="./contacto.html">Contacto</a></li>
                 <li><a href="./quienes.html">Quienes somos</a></li>
                 <li><a href="./terminos.html">Términos y condiciones</a></li>
             </ul>
         </div>
-        <div class="col text-center"><h3 class="h3">Servicios</h3>
+        <div class="col text-center"><h3 class="h5">Servicios</h3>
             <ul>
                 <li><a href="./login.html">Mi cuenta</a></li>
             </ul>
