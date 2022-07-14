@@ -1,0 +1,84 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    ul{
+        padding-left: 0%;
+    }
+    #pestana{
+        background-color: rgba(209, 178, 218, 0.452);
+        color: gray;
+        .h4{
+            margin-bottom: 0%;
+        }
+    }
+}
+
+header{
+    .form-control{
+        width: 75%;
+    }
+    .ba-light{
+        background-color: rgba(178, 192, 218, 0.452);
+    }
+    #botonMenu{
+        color: #c17899;
+    }
+    #loginHeader{
+        color: #c17899;
+    }
+    .nav-item{
+        padding-left: 40px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .nav-item a{
+        color: #c17899;
+    }
+}
+
+#botonBuscar{
+    background-color: $btnColor;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+footer{
+    background-color: rgba(178, 192, 218, 0.452);
+    padding-top: 20px;
+    a,ul{
+        text-decoration: none;
+        list-style: none;
+    }
+    p{
+        margin-bottom: 0%;
+    }
+    a{
+        font-size: 14px;
+         text-transform: uppercase;
+        color: #c17899;
+    }
+    .h5{
+        text-transform: uppercase;
+        color: gray;
+    }
+    .col1{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#logo{
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

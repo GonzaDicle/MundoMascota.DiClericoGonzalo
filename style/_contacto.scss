@@ -1,0 +1,11 @@
+#fondoContacto{
+    background-color: $bgColor;
+    text-transform: uppercase;
+    --bs-gutter-x: 0;
+    .h5{
+        padding-top: 20px;
+    }
+    #formGroupExampleInputConsulta{
+        height: 200px;
+    }
+}
