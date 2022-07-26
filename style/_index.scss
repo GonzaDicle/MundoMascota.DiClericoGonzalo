@@ -12,8 +12,9 @@
 #fondoConsejos{
     background-color: rgba(128, 128, 128, 0.137);
     .btn{
-        background-color: #c17899;
-        border: none;
-        text-transform: uppercase;
+       @extend #botonBuscar;
+       &:hover{
+        transform: scale(1.2);
     }
+}
 }

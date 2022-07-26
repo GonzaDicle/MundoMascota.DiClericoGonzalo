@@ -1,6 +1,20 @@
+@mixin estilos ($color, $tipo, $tamano, $padding) {
+    color: $color;
+    font-style: $tipo;
+    font-size: $tamano;
+    padding-top: $padding;
+}
+
 #fondoTerminos{
     background-color: $bgColor;
     p{
         margin-bottom: 0%;
+        @include estilos(#3b5898b9, italic, 18px, 5px);
+    }
+    .h5{
+        @include estilos(#3b5998, normal, 22px, 15px);
     }
 }
+
+
+
