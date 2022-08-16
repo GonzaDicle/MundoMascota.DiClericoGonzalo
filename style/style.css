@@ -33,7 +33,7 @@ header .nav-item a {
   color: #c17899;
 }
 
-#botonBuscar, #fondoConsejos .btn {
+#botonBuscar, #categorias .card .btn, #fondoConsejos .btn {
   background-color: #c17899;
   color: white;
   border: none;
@@ -114,6 +114,9 @@ footer .col1 {
 #fondoIndex .col-md-4 {
   padding-right: 5px;
 }
+#fondoIndex .card-img-top {
+  border-radius: 20px;
+}
 
 #fondoConsejos {
   background-color: rgba(128, 128, 128, 0.137);
@@ -159,6 +162,34 @@ footer .col1 {
   font-style: normal;
   font-size: 22px;
   padding-top: 15px;
+}
+
+#categorias {
+  background-color: rgba(154, 168, 189, 0.6588235294);
+}
+#categorias .card {
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: rgba(162, 173, 190, 0.6588235294);
+  border-style: none;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#categorias .card .card-img-top {
+  padding-top: 10px;
+  border-radius: 20px;
+}
+#categorias .card .btn:hover {
+  transform: scale(1.2);
+}
+#categorias .card .card-title {
+  font-weight: bold;
+  font-style: italic;
+  color: #c17899;
+}
+#categorias .card .card-text {
+  font-size: 15px;
+  color: rgb(116, 116, 116);
+  text-transform: uppercase;
 }
 
 * {

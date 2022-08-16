@@ -1,0 +1,30 @@
+#categorias{
+    background-color: $bgColor;
+    .card{
+        margin-bottom: 20px;
+        border-radius: 20px;
+        background-color: $cardColor;
+        border-style: none;
+        font-family: 'Source Sans Pro', sans-serif;
+        .card-img-top{
+            padding-top: 10px;
+            border-radius: 20px;
+        }
+       .btn{
+            @extend #botonBuscar;
+            &:hover{
+            transform: scale(1.2);
+        }
+        }
+        .card-title{
+            font-weight: bold;
+            font-style: italic;
+            color: #c17899;
+        }
+        .card-text{
+            font-size: 15px;
+            color: rgb(116, 116, 116);
+            text-transform: uppercase;
+        }
+}
+}
